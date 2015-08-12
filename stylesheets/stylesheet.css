@@ -541,8 +541,8 @@ aside a.button {
   width: 138px;
   padding-left: 64px;
   margin-bottom: 20px;
-  font-size: 21px;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
+  font-size: 18px;
+  background: #2D83DA;
 }
 
 code, pre {
