@@ -352,8 +352,8 @@ header h2 {
         }
             #main-content .b-catalog_item {
                 margin-bottom: 50px;
-                height: 375px;
-                width: 237px;
+                /*height: 375px;*/
+                width: 300px;
             }
             #main-content .b-catalog_item:hover {
                 box-shadow: 0 0 10px #e0e0e0;
@@ -401,9 +401,9 @@ header h2 {
   header h2 {
     font-size: 30px;
   }
-  #main-content {
+  /*#main-content {
     width: 490px;
-  }
+  }*/
   #main-content h1:before,
   #main-content h2:before,
   #main-content h3:before,
