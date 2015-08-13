@@ -350,15 +350,15 @@ header h2 {
             -ms-flex-pack: justify;
             justify-content: space-between
         }
-            #main-content .b-catalog_item {
+            #main-content .portfolio_list_item {
                 margin-bottom: 50px;
                 /*height: 375px;*/
                 width: 300px;
             }
-            #main-content .b-catalog_item:hover {
+            #main-content .portfolio_list_item:hover {
                 box-shadow: 0 0 10px #e0e0e0;
             }
-            #main-content .b-catalog_item .item {
+            #main-content .portfolio_list_item .item {
                 text-align: left;
                 padding:0 10px;
             }
