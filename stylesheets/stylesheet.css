@@ -352,7 +352,7 @@ header h2 {
         }
             #main-content .portfolio_list_item {
                 margin-bottom: 50px;
-                /*height: 375px;*/
+                height: 100%;
                 width: 300px;
             }
             #main-content .portfolio_list_item:hover {
