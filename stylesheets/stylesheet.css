@@ -351,9 +351,12 @@ header h2 {
             -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
             justify-content: space-between*/
-            -webkit-column-count: 3;
-            -moz-column-count: 3;
-            column-count: 3;
+            -webkit-columns: 300px 3;
+            -moz-columns: 300px 3;
+            columns: 300px 3;
+            -webkit-column-gap: 40px;
+            -moz-column-gap: 40px;
+            column-gap: 40px;
         }
             #main-content .portfolio_list_item {
                 margin-bottom: 20px;
@@ -371,6 +374,10 @@ header h2 {
                 padding:0 10px;
             }*/
             #main-content .portfolio_list_item img {
+              -webkit-filter: grayscale(1);
+              -webkit-filter: grayscale(100%);
+              filter: grayscale(100%);
+              filter: gray;
               margin: 10px;
             }
 
@@ -467,21 +474,6 @@ header h2 {
   header a.button small {
     display: inline;
     font-size: 13px;
-  }
-  #main-content,
-  aside#sidebar {
-    float: none;
-    width: 100% ! important;
-  }
-  aside#sidebar {
-    min-height: 0;
-    padding: 20px 0;
-    margin-top: 20px;
-    background-image: none;
-    border-top: solid 1px #ddd;
-  }
-  aside#sidebar a.button {
-    display: none;
   }
   #main-content h1:before,
   #main-content h2:before,
