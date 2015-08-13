@@ -334,7 +334,7 @@ header h2 {
 
 #main-content {
   float: left;
-  width: 690px;
+  /*width: 690px;*/
 }
           #main-content .b-catalog_list {
             display: -webkit-box;
