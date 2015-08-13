@@ -336,7 +336,7 @@ header h2 {
   float: left;
   /*width: 690px;*/
 }
-          #main-content .portfolio_list {
+          #main-content .b-catalog_list {
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
@@ -353,7 +353,7 @@ header h2 {
             #main-content .b-catalog_item {
                 margin-bottom: 50px;
                 /*height: 375px;*/
-                width: 2300px;
+                width: 300px;
             }
             #main-content .b-catalog_item:hover {
                 box-shadow: 0 0 10px #e0e0e0;
