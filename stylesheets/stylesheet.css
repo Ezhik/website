@@ -351,21 +351,29 @@ header h2 {
             -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
             justify-content: space-between*/
-            -webkit-columns: 300px 3;
-            -moz-columns: 300px 3;
-            columns: 300px 3;
-            -webkit-column-gap: 40px;
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            margin: auto;
+            padding: 20px 0;
+            /*-webkit-column-gap: 40px;
             -moz-column-gap: 40px;
-            column-gap: 40px;
+            column-gap: 40px;*/
         }
             #main-content .portfolio_list_item {
-                margin-bottom: 20px;
-                height: 100%;
-                width: 300px;
+                margin: 20px;
+                /*height: 100%;*/
+                /*width: 315px;*/
                 box-shadow: 0 0  10px #17A295;
+                -webkit-box-shadow: 0 0  10px #17A295;
+                -moz-box-shadow:    0 0  10px #17A295;
+                display: inline-block;
+                width: calc(100% - 30px);
             }
             #main-content .portfolio_list_item:hover {
               box-shadow: 2px 2px 10px gray;
+              -webkit-box-shadow: 2px 2px 10px gray;
+              -moz-box-shadow: 2px 2px 10px gray;
             }
             #main-content .portfolio_list_item img:hover {
                 filter: none;
@@ -383,7 +391,7 @@ header h2 {
               -webkit-filter: grayscale(100%);
               filter: grayscale(100%);
               filter: gray;
-              margin: 10px;
+              display: block;
             }
 
 #main-content img {
