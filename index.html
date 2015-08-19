@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
     <!--[if lt IE 9]>
@@ -23,63 +22,70 @@
         <h2></h2>
       </div>
     </header>
-
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-        <div class="portfolio_list">
-                        <div class="portfolio_list_item">
-                            <img src="images/1.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/2.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/3.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/4.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/5.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/6.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/7.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/8.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/9.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/10.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/11.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/12.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/13.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/14.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/15.jpg">
-                        </div>
-                        <div class="portfolio_list_item">
-                            <img src="images/16.jpg">
-                        </div>
-
-                    </div>
+          <div class="portfolio_list">
+              <div class="portfolio_list_item">
+                  <img class="small_img" id="small_image" onclick="change();" src="images/1.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/2.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/3.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/4.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/5.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/6.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/7.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/8.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/9.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/10.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/11.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/12.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/13.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/14.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/15.jpg">
+              </div>
+              <div class="portfolio_list_item">
+                  <img class="small_img" src="images/16.jpg">
+              </div>
+          </div>
         </section>
       </div>
+      <!-- <div class="inner_hide clearfix">
+        <section id="main-content">
+          <div class="portfolio_list_hide">
+            <div class="portfolio_list_hide_item">
+                <img class="big_img" src="images/1.jpg">
+            </div>
+          </div>
+        </section>
+      </div> -->
     </div>
     <header>
       <div class="inner">
@@ -87,6 +93,68 @@
         <h2></h2>
       </div>
     </header>
+    <script type="text/javascript" >
+        var image_tracker = 1;
+        function change() {
+          var image = document.getElementById('small_image');
+          if (image_tracker == 1) {
+            image.src = 'images/16.jpg';
+            image_tracker = 0;
+          } else {
+            image.src = 'images/1.jpg';
+            image_tracker = 1;
+          }
+        }
+
+
+      //   function init(){
+
+      //    small_image=document.getElementById('small_image').getElementsByTagName('img');
+      // for(i=0;i<small_image.length;i++) {
+      // small_image[i].onclick=function() {
+      //    swapImage(this.src);
+      //    }
+      //   }
+      //  }
+
+      // function swapImage(url){
+
+      //    str=url.lastIndexOf(".");
+      //    str1=url.substring(str-1);
+      //    str2=url.substring(str);
+
+      //    url=url.replace(str1,str2);
+
+      //    document.getElementById('big_image').src=url;
+
+      //  }
+
+      //    window.addEventListener?
+      //    window.addEventListener('load',init,false):
+      //    window.attachEvent('onload',init);
+
+</script>
+    </script>
 
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
